@@ -10,8 +10,6 @@ $(document).ready(function(){
       $('#itemList').append('<li class="item ui-state-default">' + value + '</li>'); // Add to the list
       $('form').find('input:text').val('');
       e.preventDefault();
-    } else {
-      alert('You must add a item'); // Message cause of empty
     }
   });
 
@@ -20,8 +18,8 @@ $(document).ready(function(){
   // });
 
   $(function() {
-    $( "#itemList, #itemDone" ).sortable({
-      connectWith: ".connectedSortable"
+    $( '#itemList, #itemDone' ).sortable({
+      connectWith: '.connectedSortable'
     }).disableSelection();
   });
 
