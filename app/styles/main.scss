@@ -1,0 +1,113 @@
+// bower:scss
+// endbower
+
+$blue: #80CBC4;
+$red: #D0021B;
+$gray: #F4F4F4;
+/************END IMPORT SECTION**********************/
+* {
+  box-sizing: border-box;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.clearfix::after, .clearfix::before {
+  display: "";
+}
+
+body {
+  background: $blue;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  width: 100%;
+}
+
+/*************END OF GLOBALS***********************/
+
+.title {
+  text-align: center;
+  color: #fff;
+}
+
+.formItem form {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.container {
+  width: 80%;
+  position: relative;
+  margin: 5% auto 0;
+}
+
+#toBuy, #done {
+  background: #fff;
+  height: 450px;
+  width: 30%;
+  margin: 100px;
+  position: absolute;
+  text-align: center;
+}
+
+#tobuy {
+  left: 10px;
+}
+
+#done {
+  right: 10px;
+}
+
+/**************RESPONSIVE**********************/
+
+@media screen and (max-width:800px) {
+
+  #toBuy, #done {
+    width: 35%;
+    margin: 70px;
+  }
+}
+
+@media screen and (max-width:630px) {
+
+  #toBuy, #done {
+    width: 40%;
+    margin: 40px;
+  }
+}
+
+@media screen and (max-width:575px) {
+
+  #toBuy, #done {
+    margin: 35px;
+    height: 350px;
+    width: 39%;
+  }
+}
+
+@media screen and (max-width:465px) {
+  #toBuy, #done {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width:400px) {
+  #toBuy, #done {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width:340px) {
+  #toBuy, #done {
+    width: 32%;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+}
