@@ -11,6 +11,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -26,17 +27,24 @@
     <h1 class="title">Shopping List</h1>
     <div class="formItem">
       <form>
-        <input type="text" id="itemInput">
+        <input type="text" id="itemInput" placeholder="Add Item Here...">
       </form>
     </div>
     <div class="container">
       <div class="clearfix" id="toBuy">
         <h2>To Buy</h2>
         <hr>
+        <div class="itemList connectedSortable" id="itemList">
+          <ul>
+          </ul>
+        </div>
       </div>
-      <div class="clearfix" id="done">
+      <div class="clearfix " id="done">
         <h2>Done</h2>
         <hr>
+        <div class="itemListDone connectedSortable completed" id="itemDone"></div>
+        <hr>
+        <button><i class="fa fa-trash fa-2x"></i></button>
       </div>
     </div>
 

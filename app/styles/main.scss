@@ -38,7 +38,21 @@ body {
   transform: translate(-50%, -50%);
 }
 
+button {
+  background: $red;
+  color: #fff;
+  padding: 5px 40px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px black;
+  cursor: pointer;
+  margin: 10px auto;
+}
 
+button:hover {
+  transform: scale(1.5);
+  box-shadow: 4px 4px 4px black;
+}
 
 .container {
   width: 80%;
@@ -48,11 +62,12 @@ body {
 
 #toBuy, #done {
   background: #fff;
-  height: 450px;
+  min-height: 450px;
   width: 30%;
   margin: 100px;
   position: absolute;
   text-align: center;
+  list-style-type: none;
 }
 
 #tobuy {
@@ -61,6 +76,27 @@ body {
 
 #done {
   right: 10px;
+}
+
+#itemList, #itemDone {
+  min-height: 300px;
+}
+
+
+li.item {
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 100px;
+  margin: 5px auto 0;
+  list-style: none;
+  padding: 5px;
+  cursor: grabbing;
+  // transition: all 1.5 ease;
+}
+
+.ui-draggable-dragging {
+  transform: scale(5);
+
 }
 
 /**************RESPONSIVE**********************/
